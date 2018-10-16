@@ -7,7 +7,7 @@ environment:
       PYTHON_VERSION: "3.5"
       PYTHON_ARCH: "64"
       CONDA_PY: "35"
-      
+
     - PYTHON: "C:\\Python36_64"
       PYTHON_VERSION: "3.6"
       PYTHON_ARCH: "64"
@@ -25,10 +25,10 @@ install:
 
   # Don't install from requirements-pip.txt, python-coveralls has broken dependencies on windows it seems.
   - conda install --yes setuptools nose numpy pip coverage scipy pandas pyparsing six scikit-learn Cython cloudpickle joblib ipython
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
   - python setup.py install
-  - pip install PyQt5
-
+  - pip3 install PyQt5
+  -
 build: false
 
 test_script:
