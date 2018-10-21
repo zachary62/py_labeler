@@ -23,7 +23,6 @@ install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
 
   # Don't install from requirements-pip.txt, python-coveralls has broken dependencies on windows it seems.
-  
   - pip install -r requirements.txt
   - python setup.py install
   - pip install PyQt5
